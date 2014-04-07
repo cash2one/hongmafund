@@ -1,0 +1,18 @@
+<head>
+    {# Jquery CDN : Needed when using jquery_on_ready=True #}
+    <script src="/static/js/jquery-1.7.2.min.js"></script>
+    <link media="all" href="/static/nvd3/src/nv.d3.css" type="text/css" rel="stylesheet" />
+    <script src="/static/d3/d3.min.js" type="text/javascript"></script>
+    <script src="/static/nvd3/nv.d3.min.js" type="text/javascript"></script>
+    {{ chart_html|safe }}
+    {{ chart_html2|safe }}
+</head>
+<body>
+    <div >
+        <li id="lineChart" style="width: 300px;height: 250px;float: left;" ><svg></svg></li>
+        <li id="lineChart2" style="width: 300px;height: 250px;float: left;"><svg></svg></li>
+    {% for i in adimg %}
+        <li style="width: 300px;height: 250px;float: left;" ><img src="{{ i.ad_Img.url }}"/></li>
+    {% endfor %}
+    </div>
+</body>

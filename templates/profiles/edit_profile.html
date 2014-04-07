@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Edit settings for {{ user.first_name }} {{ user.last_name }} ({{user}})</h2>
+<div>
+<form method="post" action="">
+  {% csrf_token %}
+  <!--{{ form.as_ul }}-->
+  <p>We recommend  keeping all of these settings enabled. <br />
+		Don't worry - none of them will result in a ton of email!</p>
+
+    <div class="fieldWrapper inline">
+        {{form.mobile.label_tag}}{{form.mobile}}
+    </div>
+	<div class="fieldWrapper inline">
+	{{form.qq.label_tag}}{{form.qq}}
+	</div>
+	
+	<div class="fieldWrapper inline">
+	{{form.phone.label_tag}}{{form.phone}} 
+	</div>
+	
+	<div class="fieldWrapper inline">
+	{{form.address.label_tag}}{{form.address}} 
+	</div>		
+	
+	<div class="fieldWrapper inline">
+	{{form.login_ip.label_tag}}{{form.login_ip}} 
+	</div>	
+	
+	<div class="fieldWrapper inline">
+	{{form.logins.label_tag}}{{form.logins}} 
+	</div>	
+
+	<p style="margin-top:30px;"><input class="button blue" type="submit" value="Update settings" /> </p>
+</form>
+</div>
+{% endblock %}

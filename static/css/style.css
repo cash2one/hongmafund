@@ -1,0 +1,235 @@
+﻿
+.index_body{background:url(/static/images/2.png) no-repeat center 0;}
+#artical {
+	padding:20px 0;
+	background:#fff
+}
+.artical_left {
+	float:left;
+	width:160px;
+}
+.artical_right {
+	float:left;
+	width:840px;
+	margin-left:20px;
+	overflow:hidden;
+}
+.artical_left h3{height:30px;line-height:30px;color:#fff;
+	font-weight:normal;
+	background:#ca5d60;
+	padding-left:10px;border-bottom:1px solid #b7514d;}
+.artical_left h3.sub{height:30px;line-height:30px;color:#fff;
+	font-weight:normal;
+	background:#ca5d60 url(/static/images/+.png) no-repeat 130px 7px;
+	padding-left:10px;border-bottom:1px solid #b7514d;}
+.artical_left h3.h3_on {
+	color:#fff;
+	font-weight:bold;
+	background:#ca5d60 url(/static/images/-.png) no-repeat 130px 7px;
+
+}
+.artical_left h3 a:link, .artical_left h3 a:visited {
+	color:#fff;
+	font-weight:normal;
+}
+.artical_left .h3_on a:link, .artical_left .h3_on a:visited {
+	color:#fff;
+	font-weight:bold;
+}
+.artical_left ul {
+	padding:10px 0;
+}
+.artical_left .submenu li {
+	width:158px;
+	height:30px;
+	line-height:30px;
+	border-bottom:1px dotted #ddd;
+}
+.artical_left li a {
+	color:#666;
+	display:block;
+	padding-left:10px;
+	background:url(/static/images/artical_menuli.png) no-repeat 20px 15px;
+}
+.artical_left .on a:link, .artical_left .on a:visited {
+	color:#c21020
+}
+.submenu{background:#f8f8f8;border:1px solid #ddd;}
+
+.artical_right {
+	float:right;
+	width:820px;
+}
+.artical_tabs {
+	margin-bottom:10px;
+}
+.artical_list {
+	width:778px;
+	border:1px solid #ddd;
+	background:#fff;
+	padding:10px 20px;
+	float:left;
+	margin-top:10px;
+}
+.artical_list h3 {
+	font-size:16px;
+	color:#c21020;
+	height:40px;
+	line-height:40px;
+	margin-bottom:20px;
+}
+.artical_list_ul li {
+	height:35px;
+	line-height:35px;
+	border-bottom:1px dotted #ddd;
+	padding:0 10px;
+}
+.artical_list_ul li em {
+	float:right;
+	color:#999;
+}
+.artical_con h4 {
+	font-size:18px;
+	padding:10px 0;
+	border-bottom:1px dotted #ddd;
+	margin-bottom:20px;
+	color:#333;
+	text-align:center;
+}
+.artical_con p {
+	line-height:1.5em;
+	margin-bottom:10px;
+	text-indent:2em;
+}
+
+.reg_main {
+	width:958px;
+	padding:20px;
+	border:1px solid #ebebeb;
+	background:#f7f7f7;
+	margin:20px auto;
+}
+.reg_main h3 {
+	font:24px "微软雅黑";
+	color:#333;
+	border-bottom:1px solid #efefef;
+	padding-bottom:10px;
+}
+.reg_main h3 em {
+	font:12px "宋体";
+	color:#999;
+}
+.reg_con {
+	width:561px;
+	border-top:1px solid #fff;
+	padding:40px;
+}
+.reg_con, .reg_sidebar {
+	float:left;
+}
+.reg_con ul {
+	float:left;
+}
+.reg_con li {
+	float:left;
+	width:580px;
+	padding:10px 0;
+	font-size:14px;
+}
+.reg_con li .input {
+	height:30px;
+	line-height:30px;
+}
+.reg_con li .on {
+	border:1px solid #4690cd;
+	background:#e6f4ff;
+}
+.field {
+	font-size:12px;
+}
+.field div {
+	padding-left:20px;
+	font-size:12px;
+	height:25px;
+	line-height:25px;
+}
+.field .val_field_error {
+	background:url(/static/images/cross_circle.png) no-repeat 0 5px;
+	color:#f00;
+}
+.field .val_field_right {
+	background:url(/static/images/tick_circle.png) no-repeat 0 5px;
+	color:#95c708;
+}
+.field .val_field_tips {
+	padding-left:0;
+	color:#999;
+}
+.reg_con li span {
+	float:left;
+	width:470px;
+	overflow:hidden;
+}
+.reg_con #send_code {
+	display:inline;
+	width:auto;
+}
+.send_tips em {
+	color:#4690cd
+}
+.reg_con li .tit {
+	width:100px;
+	text-align:right;
+	display:inline-block;
+	height:32px;
+	line-height:32px;
+}
+.reg_sidebar {
+	border-left:1px solid #fff;
+	float:left;
+	padding:30px;
+	width:250px;
+}
+.reg_sidebar dt {
+	font:14px "微软雅黑";
+	color:#999;
+}
+.reg_sidebar li {
+	padding-left:15px;
+	background:url(/static/images/sidebar_li.png) no-repeat 0 7px;
+	line-height:24px;
+	color:#999;
+}
+.reg_sidebar dl {
+	height:180px;
+}
+.reg_sidebar dt {
+	margin-bottom:20px;
+	float:left;
+	width:200px;
+}
+.reg_sidebar dd {
+	width:125px;
+	float:left;
+}
+.reg_sidebar dd a {
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+	color:#4690cd;
+	background:url(/static/images/reg_ico.png) no-repeat;
+	padding-left:30px;
+	display:block;
+}
+.reg_sidebar dd a {
+	width:100px;
+	height:40px;
+}
+.reg_sidebar dd a:link, .reg_sidebar dd a:visited {
+	color:#4690cd;
+}
+.reg_sidebar dd a:hover {
+	background:url(/static/images/reg_ico.png) no-repeat #eee;
+}
+
+.banner{height:200px;}

@@ -1,0 +1,332 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+/*赚钱步骤*/
+#step {
+	padding:0 0 10px 0;
+}
+.index_box {
+	background:#efefef;
+	padding:10px 0;
+}
+/*广告滚动*/
+.banner {
+	float:left;
+	position:relative;
+	border:1px solid #ddd;
+}
+#adv_show {
+	position:relative;
+	width:700px;
+	height:240px;
+	overflow:hidden;
+}
+/*登陆框*/
+.login {
+	float:left;
+	width:277px;
+	height:210px;
+	overflow:hidden;
+	border:1px solid #ddd;
+	border-left:0;
+	background:#fff;
+	padding:20px 10px 10px 10px;
+}
+.login table {
+	font-size:14px;
+}
+.login th {
+	font-weight:normal;
+	width:50px;
+}
+.login td {
+	padding:5px;
+}
+.login td span{padding:3px 8px;margin-left:3px;height:20px;}
+.login .error{	background: url(../images/cross_circle.png) no-repeat 0 5px;
+	color:#f00;}
+
+.login .right {
+	background: url(../images/tick_circle.png) no-repeat 0 5px;
+	color:#95c708;
+}
+.login .input {
+	width:180px;
+	float:left;
+}
+.login .input_redborder{
+	border:1px solid red}
+.index_loginbtn {
+	behavior: url(../ie-css3.htc);
+	width:100px;
+	height:32px;
+	line-height:32px;
+	color:#fff;
+	font-weight:bold;
+	font-size:14px;
+	display:inline-block;
+	text-align:center;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	/* Saf3-4, iOS 1-3.2, Android ≤1.6 */
+	background: -webkit-gradient(linear, left top, left bottom, from(#4d9ddf), to(#397db4));
+	background: -webkit-linear-gradient(top, #4d9ddf, #397db4);
+	background: -moz-linear-gradient(top, #4d9ddf, #397db4);
+	background: -ms-linear-gradient(top, #4d9ddf, #397db4);
+	background: -o-linear-gradient(top, #4d9ddf, #397db4);
+	background: linear-gradient(to bottom, #4d9ddf, #397db4);
+	border:1px solid #2476ba;
+ FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4d9ddf, endColorstr=#397db4);
+}
+.index_loginbtn:hover {
+	background: #50a1e4;
+	background: -webkit-gradient(linear, left top, left bottom, from(#50a1e4), to(#4797d9));
+	background: -webkit-linear-gradient(top, #50a1e4, #4797d9);
+	background: -moz-linear-gradient(top, #50a1e4, #4797d9);
+	background: -ms-linear-gradient(top, #50a1e4, #4797d9);
+	background: -o-linear-gradient(top, #50a1e4, #4797d9);
+	background: linear-gradient(to bottom, #50a1e4, #4797d9);
+	border:1px solid #2e8bd8;
+	color:#fff;
+}
+.index_loginbtn:active {
+	background: #397db4;
+	background: -webkit-gradient(linear, left top, left bottom, from(#397db4), to(#4d9ddf));
+	background: -webkit-linear-gradient(top, #397db4, #4d9ddf);
+	background: -moz-linear-gradient(top, #397db4, #4d9ddf);
+	background: -ms-linear-gradient(top, #397db4, #4d9ddf);
+	background: -o-linear-gradient(top, #397db4, #4d9ddf);
+	background: linear-gradient(to bottom, #397db4, #4d9ddf);
+	border:1px solid #2e8bd8;
+	color:#fff;
+}
+.index_loginbtn:link, .index_loginbtn:visited {
+	color:#fff;
+}
+
+.other_logon {
+	position:relative;
+	margin-top:10px;
+	border-top:1px solid #ddd;
+}
+.other_logon p {
+	position:absolute;
+	top:-10px;
+	left:50px;
+	text-align:center;
+	width:160px;
+	padding:0 10px;
+	background:#fff;
+}
+.other_logon div {
+	margin:0 auto;
+	margin:10px 0 0 10px;
+}
+.show{padding-left:20px;
+	cursor: pointer;
+	display: inline-block;
+	height: 27px;
+	line-height: 27px;
+	margin: 10px auto;
+	float:left;
+	width: 60px;
+	margin-right:5px;}
+.qqlog {background: url(../images/qq.gif) no-repeat  0 5px;}
+.sinalog {background: url(../images/icon_sina.gif) no-repeat  0 5px;}
+.taobaolog {background: url(../images/taobao.gif) no-repeat  0 5px;}
+.login_on{padding:20px;width:257px;height:200px;}
+.login_on .tips{background:#fff7bf url(../images/exclamation.png) no-repeat 7px 7px ;padding-left:30px;
+	border:1px solid #E6DB55;
+	border-radius: 3px;
+	-webkit-border-radius:3px;
+	color:#c55700;
+	margin-botton:10px;
+	font-size:12px;
+}
+.login_on .tips a{float:right;margin-right:5px;}
+.login_on p{height:30px;line-height:30px;font-size:14px;}
+.login_on p .blue_btn{margin-right:10px;}
+.login_share{border-top:1px dotted #ddd;padding:10px 0;font-size:12px;margin-top:10px;}
+.login_share p{font-size:12px;color:#999}
+.login_share .input{width:230px;}
+.guanzhu{float:left;padding-top:3px;}
+/*赚钱形式*/
+
+/*首页主体*/
+.index_left {
+	width:700px;
+	float:left;
+}
+.index_right{
+	width:280px;
+	float:right
+}
+/*热门商家*/
+.index_mall {
+	border:1px solid #ddd;
+	padding:20px 20px 10px 20px;
+	background:#fff;
+}
+.index_mall img {
+	width:100px;
+	height:50px;
+		padding: 0 4px;
+		margin-left:15px;
+
+}
+.index_mall dl {
+	position:relative;
+	width:150px;
+	float:left;
+	margin:0 10px 10px 0;
+}
+.index_mall .mr0 {
+	margin-right:0;
+}
+.index_mall dd p {
+	height:20px;
+	line-height:20px;
+	text-align:center;
+}
+.index_mall .tips {
+	position:absolute;
+	left:0px;
+	top:75px;
+	padding:0 2px;
+    border:1px solid #95c708;
+	border-top:1px dotted #ddd;
+	background:#fff;
+	width:128px;
+	z-index:1000;
+	display:none;
+	padding:10px;
+	margin-top:4px;
+}
+.tips .green_btn,.tips .blue_btn{padding:0 7px;margin-right:2px;font-weight:normal;height:24px;line-height:24px;} 
+.index_mall .tips p{height:auto;line-height:15px;text-align:left;font-family:"宋体";padding:2px 0;}
+.index_mall .tips p a{}
+/*专题活动*/
+#act_subject{
+	width:280px;
+	height:200px;overflow:hidden;
+	position:relative;
+	}
+/*网站公告*/
+.index_news {
+	width:258px;
+	height:115px;
+	overflow:hidden;
+	border:1px solid #ddd;
+	background:#fff;
+	padding:10px;
+}
+.index_news li {
+	height:30px;
+	line-height:30px;
+	width:258px;
+	overflow:hidden;
+}
+.index_news li em {
+	font-style:normal;
+	float:right;
+	color:#999;
+}
+.index_news li a {
+	height:30px;
+	line-height:30px;
+	display:block;
+}
+.index_news li a:hover {
+	background:#eee;
+}
+/*火爆活动*/ 
+.index_act {
+	border:1px solid #ddd;
+	background:#fff;
+	padding:20px 20px 0 20px;
+	height:aauto;
+	float:left;
+}
+.index_act dl {
+	float:left;
+	width:320px;
+	position:relative;
+	margin-bottom:16px;
+	margin-right:15px;
+
+}
+.index_act .mr0{margin-right:0;}
+.index_act dt {
+	float:left;
+}
+.index_act dt img {
+	display:block;
+}
+.index_act .opacitybg {
+	background:#000;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	
+}
+.index_act dd {
+	position:absolute;bottom:0;left:0;
+	width:320px;
+	float:left;
+	color:#fff;height:25px;line-height:25px;text-indent:1em;
+	display:none;
+}
+.index_act dd a:hover{text-decoration:underline;}
+/*大使榜*/
+.index_user {
+	border:1px solid #ddd;
+	background:#fff;
+	padding:11px 10px;
+}
+.index_user li {
+	height:30px;
+	line-height:30px;
+	overflow:hidden;
+}
+.index_user li span {
+	float:right;
+	color:#4d9ddf;
+}
+/*合作伙伴*/
+.index_partner {
+	background:#fff;
+	border:1px solid #ddd;
+	padding:20px;
+}
+.index_partner a {
+	margin-right:20px;
+}
+.adv_bar {margin-top:20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+#index_mall .tabs .first{background:url(../images/title_bg.jpg) no-repeat 0 0;text-indent:-9999em;width:110px;}
+/*商家促销*/
+#index_cx{
+	color:#333;
+	font:18px "微软雅黑";
+	height:40px;
+	line-height:40px;
+}
+
+#index_mall{background:#fff;border:1px solid #ddd;padding:10px;width:978px;}
+#index_mall .tabs_con{border:0;padding:0;}
+
+.index_article_list{width:236px;margin-right:10px;float:left;
+}
+.index_article_list h2{height:40px;line-height:40px;backgeround:red}
+.index_article_list h2

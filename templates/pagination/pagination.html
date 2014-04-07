@@ -1,0 +1,35 @@
+{% if is_paginated %}
+{% load i18n %}
+	<li><span >  第{{ page_obj.number }}/{{ pages|length }} 页</span></li>
+	{% ifequal page 1 %}
+        <li>首页</li>
+    {% else %}
+         <li class="selected"><a href="?page=1">首页</a></li>
+    {% endifequal %}
+    {% if page_obj.has_previous %}
+        <li><a href="?page={{ page_obj.previous_page_number }}{{ getvars }}{{ hashtag }}" class="prev">&lsaquo;&lsaquo; 上一页</a></li>
+    {% else %}
+        <li><a href="">&lsaquo;&lsaquo; 上一页</a></li>
+    {% endif %}
+    {% for page in pages %}
+        {% if page %}
+            {% ifequal page page_obj.number %}
+                <li><a href="" class="current">{{ page }}</a></li>
+            {% else %}
+                <li><a href="?page={{ page }}{{ getvars }}{{ hashtag }}" class="page">{{ page }}</a></li>
+            {% endifequal %}
+        {% else %}
+            ...
+        {% endif %}
+    {% endfor %}
+    {% if page_obj.has_next %}
+        <li><a href="?page={{ page_obj.next_page_number }}{{ getvars }}{{ hashtag }}" class="next">下一页 &rsaquo;&rsaquo;</a></li>
+    {% else %}
+        <li><a href="">下一页 &rsaquo;&rsaquo;</a></li>
+    {% endif %}
+    {% ifequal page pages %}
+        <li>尾页</li>
+    {% else %}
+         <li><a href="?page={{ pages|length }}">尾页</a></li>
+    {% endifequal %}
+{% endif %}

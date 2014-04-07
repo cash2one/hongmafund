@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Keywords" content="{{ gory_seo.keywords }}">
+<meta name="Description" content="{{ gory_seo.description }}">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>实盘账户展示-红马私募基金simu88.com</title>
+<link href="/static/css/reset.css" type="text/css" rel="stylesheet">
+<link href="/static/css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="index_body">
+<!--头部-->
+<div id="header" >
+  <div class="overall"> 
+      <h1 class="logo"><a href="index.html" title="私募888">私募888</a></h1>      
+      <div class="header_nav">
+    <a href="">设为首页</a>
+  <a href="">加入收藏</a>
+  <a href="">联系我们</a>
+  <a href="">English Version</a>
+    </div>
+</div>
+</div>
+<div id="nav">
+    <ul>
+      <li><a href="/" title="首页">首页</a></li>
+      <li class="selected"><a href="/spzh.html" title="">实盘账户展示 </a></li>
+      <li><a href="/dyzh.html" title="">单一账户理财</a></li>
+      <li><a href="/smjj.html" title="">私募基金产品</a></li>
+      <li><a href="/zzvip.html" title="">至尊vip客户</a></li>
+      <li><a href="/about.html" title="">红马简介</a></li>
+	  <li><a href="/company.html" title="">操盘团队</a></li>
+      <li><a href="/services.html" title="">服务内容</a></li>
+    </ul>   
+    <div class="clear"></div>
+  </div>
+    <div class="banner"></div>
+
+<div id="artical" >
+<div class="overall">
+<div class="artical_left">
+	
+ <h3 class="sub h3"><a href="/spzh.html">实盘账户展示</a></h3>
+	<ul class="submenu">
+      <li class='on'><a href="/spzh/dlsp.html" title="">中国大陆A股实盘账户</a></li>
+      <li><a href="/spzh/dlqh.html" title="">中国大陆期货实盘账户</a></li>
+      <li><a href="/spzh/qqqh.html" title="">全球期货实盘账户</a></li>
+      <li><a href="/spzh/qqgp.html" title="">全球股票实盘账户</a></li>
+    </ul>
+	<h3 class="sub"><a href="/dyzh.html">单一账户理财</a></h3>
+	<ul class="submenu" style="display: none;">
+      <li><a href="/dyzh/yyys.html" title="">1亿人民币以上实盘账户</a></li>
+      <li><a href="/dyzh/yyyx.html" title="">1亿人民币以下实盘账户</a></li>
+    </ul>
+	<h3 class="sub"><a href="/smjj.html">私募基金产品</a></h3>
+	<ul class="submenu" style="display: none;">
+      <li><a href="/smjj/dlsmjj.html" title="">中国大陆地区私募基金</a></li>
+      <li><a href="/smjj/qqsmjj.html" title="">全球私募基金</a></li>
+    </ul>
+	<h3 class="sub"><a href="/zzvip.html">私人操盘手服务</a></h3>
+    <ul class="submenu"  style="display: none;">
+      <li><a href="/zzvip/srcp.html" title="">雇佣专属私人操盘手</a></li>
+      <li><a href="/zzvip/zzvip.html" title="">雇佣专属至尊VIP操盘团队</a></li>
+    </ul>
+    {% if user.is_authenticated %}
+	  <h3 class="sub"><a href="/user/{{ object.username }}/">用户中心</a></h3>
+      <a href="{% url 'logout' %}">注销</a>　| <a href="{% url 'profile' slug=user.username %}"><b>{{ user.username }}</b></a> 
+      <ul class="submenu"  style="display: none;">
+		<li><a href="/zzvip/srcp.html" title="">雇佣专属私人操盘手</a></li>
+		<li><a href="/zzvip/zzvip.html" title="">雇佣专属至尊VIP操盘团队</a></li>
+	  </ul>
+    {% else %}
+      <a href="{% url 'register' %}">注册新用户</a> | <a href="{% url 'login' %}">用户登陆</a>
+    {%endif%}
+  <div class="a_loginbox">
+  </div>
+  <div class="a_loginbox login">
+  <!--用户名：peter；
+  用户级别-->
+  </div>
+  
+</div>
+  <div class="artical_right">
+
+<div class="position">您的位置：<a href="/" target="_blank">红马私募simu88.com</a><span class="point"> ></span><a href="/spzh.html" class="blue">实盘账户展示</a></div>
+      <div class="artical_list"> <!--<h3>最新公告</h3>-->
+      <ul class="artical_list_ul">
+        {% load pagination_tags %}
+        {% autopaginate article_by_gory 10 %}
+        {% for a in article_by_gory %}
+        <li><em>[{{ a.article_time|date:'Y-m-d' }}]</em><span class="point">·</span><a href="/spzh/simu{{ a.id}}88.html" title="{{ a.title }}" target="_blank">{{ a.title }}</a></li>
+        {% endfor %}
+      </ul>
+      <div class="page fr mr5">
+        <ul>
+          {% paginate %}
+        </ul>
+      </div>
+      <div class="clear"></div>
+    </div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<!--页尾-->
+{% include 'foot.html'%}
+</body>
+<script src="/static/js/jquery.js" type="text/javascript"></script>
+<script src="/static/js/common.js" type="text/javascript"></script><script type="text/javascript" >
+$(document).ready(function(){
+	$("h3.sub").click(function(){
+		if($(this).hasClass("h3_on")){
+			$(this).removeClass("h3_on")
+			$(this).next("ul").hide();
+			}
+			else{
+			$(this).addClass("h3_on")	
+			$(this).next("ul").show();
+
+				}
+		
+	})
+	})
+</script>
+</html>
+
+{% extends "base.html" %}
+
+{% block content %}
+{% if object.username == user.username %}
+<p><a href='{% url "edit_profile" %}'>Edit my profile</a></p>
+{% endif %}
+<h2>{{ object.username }}'s  sss Profile</h2>
+{% if object.username %}
+<div>
+<b>{{ object.username }}:</b>
+{{ object.userprofile.user_type }}
+{{ object.userprofile.qq }}
+{{ object.userprofile.mobile }}
+{{ object.userprofile.logins }}
+</div>
+{% endif %}
+{% endblock %}
