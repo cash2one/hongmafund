@@ -13,7 +13,9 @@ middleware here, or combine a Django application with an application of another
 framework.
 
 """
-import os
+import os, sys
+sys.path.append('/home/ubuntu/project')
+sys.path.append('/home/ubuntu/project/hongmafund')
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "hongmafund.settings")
 

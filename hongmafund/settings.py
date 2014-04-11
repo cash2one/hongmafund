@@ -21,18 +21,19 @@ CRISPY_TEMPLATE_PACK = 'uni_form'
 
 MANAGERS = ADMINS
 dbpath = os.path.dirname(os.path.dirname(__file__))
-"""
+#aws database config 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'hongmafund',
+        'NAME': 'hmfund',
         'USER': 'hongmafund',
-        'PASSWORD': '1234',
-        'HOST': '/home/cbingo/webapps/mysqlx/var/mysql.sock',
-        'PORT': '17298',
+        'PASSWORD': 'hongmafund12',
+        'HOST': '',
+        'PORT': '3306',
     }
 }
 """
+#webfactioin database config
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
@@ -41,11 +42,11 @@ DATABASES = {
         'PASSWORD': 'ruoxuan12',                  # Not used with sqlite3.
         'HOST': '',
 	'PORT':'3306',
-	#'PRIVATE PORT':'17298',                      # Set to empty string for localhost. Not used with sqlite3.
-        #'PUBLIC_PORT': '17298',
 	'PROTOCOL':'TCP',
     }
 }
+"""
+#local database config
 """
 DATABASES = {
     'default': {
