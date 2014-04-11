@@ -1,0 +1,33 @@
+<VirtualHost *:80>
+	ServerAdmin webmaster@localhost
+        ServerName aws.suretoo.com
+	DocumentRoot /home/ubuntu/project/hongmafund
+        ServerAlias aws.suretoo.com
+        WSGIScriptAlias / /home/ubuntu/project/hongmafund/hongmafund/wsgi.py
+	ErrorLog /home/ubuntu/project/hongmafund/logs/apache_error.log
+	CustomLog /home/ubuntu/project/hongmafund/logs/apache_access.log combined
+	<Directory /home/ubuntu/project/hongmafund/media>
+		Order deny,allow
+		Allow from all
+	</Directory>
+        <Directory /home/ubuntu/project/hongmafund/media/uploads>
+                Order deny,allow
+                Allow from all
+        </Directory>
+        <Directory /home/ubuntu/project/hongmafund/media/uploads/Image>
+                Order deny,allow
+                Allow from all
+        </Directory>
+
+	<Directory /home/ubuntu/project/hongmafund/static>
+                Order deny,allow
+                Allow from all
+        </Directory>
+
+
+	LogLevel warn
+	#WSGIDaemonProcess 54.255.159.102 user=ubuntu processes=2 threads=25
+	#WSGIProcessGroup 54.255.159.102
+	alias /media/ /home/ubuntu/project/hongmafund/media/
+	alias /static/ /home/ubuntu/project/hongmafund/static/
+</VirtualHost>

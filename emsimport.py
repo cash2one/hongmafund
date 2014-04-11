@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 # -*- coding: UTF-8 -*-
 import argparse ,os,sys,csv,json,re
-
+sys.path.append('/home/ubuntu/project/hongmafund')
 sys.path.append('/home/cbin/gits/hongmafund')
 sys.path.append('/home/cbingo/webapps/hongmafund/hongmafund')
 
@@ -78,6 +78,6 @@ def import_UserInfo(filePath,*args):
             #user.user_permissions.add(u'auth.view_permission',u'auth.view_user',u'ems.change_userprofile',u'ems.view_article',u'ems.view_userprofile')
             user.save()
 if __name__ == '__main__':
-    #import_newscategory('Class.csv')
-    import_Article('Info.csv')
-    #import_UserInfo('Users.csv')
+    import_newscategory('Class.csv')
+    #import_Article('Info.csv')
+    import_UserInfo('Users.csv')
