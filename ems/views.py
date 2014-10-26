@@ -171,7 +171,7 @@ def index(request):
     #print(chart)
     from hmchart.views import admanager
     ad1,ad2 = admanager(request)
-    return render_to_response('index.html',locals())
+    return render_to_response('index2.html',locals())
 
 def spzh_list(request):
     article_dlsp = glob_article_category(request,'dlsp')

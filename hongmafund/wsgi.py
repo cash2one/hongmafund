@@ -1,4 +1,24 @@
+#!/usr/bin/env python2
+# encoding: utf-8
+
+import os
+import sys
+
+ 
+
+# 将系统的编码设置为UTF8
+reload(sys)
+sys.setdefaultencoding('utf8')
 """
+import uwsgi  
+from uwsgidecorators import timer  
+from django.utils import autoreload  
+#修改代码,自动重起uwsgi
+@timer(3)  
+def change_code_gracefull_reload(sig):  
+    if autoreload.code_changed():  
+        uwsgi.reload()
+
 WSGI config for hongmafund project.
 
 This module contains the WSGI application used by Django's development server
@@ -13,7 +33,7 @@ middleware here, or combine a Django application with an application of another
 framework.
 
 """
-import os, sys
+
 sys.path.append('/home/ubuntu/project')
 sys.path.append('/home/ubuntu/project/hongmafund')
 

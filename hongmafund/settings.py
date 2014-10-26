@@ -21,7 +21,8 @@ CRISPY_TEMPLATE_PACK = 'uni_form'
 
 MANAGERS = ADMINS
 dbpath = os.path.dirname(os.path.dirname(__file__))
-#aws database config 
+#aws database config
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -32,21 +33,6 @@ DATABASES = {
         'PORT': '3306',
     }
 }
-"""
-#webfactioin database config
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'hmfund',                      # Or path to database file if using sqlite3.
-        'USER': 'hongmafund',                      # Not used with sqlite3.
-        'PASSWORD': 'ruoxuan12',                  # Not used with sqlite3.
-        'HOST': '',
-	'PORT':'3306',
-	'PROTOCOL':'TCP',
-    }
-}
-"""
-#local database config
 """
 DATABASES = {
     'default': {
@@ -61,7 +47,6 @@ DATABASES = {
         #'ATOMIC_REQUESTS': True,                     # Set to empty string for default. Not used with sqlite3.
     }
 }
-"""
 if 'testserver' in sys.argv:
     DATABASES['default']['TEST_NAME'] = '%s/TEST_hongmafund.db'%dbpath
 
@@ -164,7 +149,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.transaction.TransactionMiddleware',
     'pagination.middleware.PaginationMiddleware',
-    
+
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
@@ -198,9 +183,9 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
 )
 #ACCOUNT_ACTIVATION_DAYS = 7
-#for registration activation days 
+#for registration activation days
 SIGNUP_ACTIVATION_DAYS = 7
-# sigup activation days 
+# sigup activation days
 AUTH_PROFILE_MODULE = "ems.UserProfile"
 
 #email setting

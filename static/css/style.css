@@ -1,5 +1,5 @@
 ﻿
-.index_body{background:url(/static/images/2.png) no-repeat center 0;}
+.index_body{background:url(../images/2.png) no-repeat center 0;}
 #artical {
 	padding:20px 0;
 	background:#fff
@@ -12,20 +12,15 @@
 	float:left;
 	width:840px;
 	margin-left:20px;
-	overflow:hidden;
 }
 .artical_left h3{height:30px;line-height:30px;color:#fff;
 	font-weight:normal;
-	background:#ca5d60;
+	background:#ca5d60 url(../images/+.png) no-repeat 130px 7px;
 	padding-left:10px;border-bottom:1px solid #b7514d;}
-.artical_left h3.sub{height:30px;line-height:30px;color:#fff;
-	font-weight:normal;
-	background:#ca5d60 url(/static/images/+.png) no-repeat 130px 7px;
-	padding-left:10px;border-bottom:1px solid #b7514d;}
-.artical_left h3.h3_on {
+.artical_left .h3_on {
 	color:#fff;
 	font-weight:bold;
-	background:#ca5d60 url(/static/images/-.png) no-repeat 130px 7px;
+	background:#ca5d60 url(../images/-.png) no-repeat 130px 7px;
 
 }
 .artical_left h3 a:link, .artical_left h3 a:visited {
@@ -48,8 +43,8 @@
 .artical_left li a {
 	color:#666;
 	display:block;
-	padding-left:10px;
-	background:url(/static/images/artical_menuli.png) no-repeat 20px 15px;
+	padding-left:30px;
+	background:url(../images/artical_menuli.png) no-repeat 20px 15px;
 }
 .artical_left .on a:link, .artical_left .on a:visited {
 	color:#c21020
@@ -154,11 +149,11 @@
 	line-height:25px;
 }
 .field .val_field_error {
-	background:url(/static/images/cross_circle.png) no-repeat 0 5px;
+	background:url(../images/cross_circle.png) no-repeat 0 5px;
 	color:#f00;
 }
 .field .val_field_right {
-	background:url(/static/images/tick_circle.png) no-repeat 0 5px;
+	background:url(../images/tick_circle.png) no-repeat 0 5px;
 	color:#95c708;
 }
 .field .val_field_tips {
@@ -196,7 +191,7 @@
 }
 .reg_sidebar li {
 	padding-left:15px;
-	background:url(/static/images/sidebar_li.png) no-repeat 0 7px;
+	background:url(../images/sidebar_li.png) no-repeat 0 7px;
 	line-height:24px;
 	color:#999;
 }
@@ -217,7 +212,7 @@
 	line-height:40px;
 	font-size:14px;
 	color:#4690cd;
-	background:url(/static/images/reg_ico.png) no-repeat;
+	background:url(../images/reg_ico.png) no-repeat;
 	padding-left:30px;
 	display:block;
 }
@@ -229,7 +224,7 @@
 	color:#4690cd;
 }
 .reg_sidebar dd a:hover {
-	background:url(/static/images/reg_ico.png) no-repeat #eee;
+	background:url(../images/reg_ico.png) no-repeat #eee;
 }
 
 .banner{height:200px;}

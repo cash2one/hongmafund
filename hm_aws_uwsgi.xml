@@ -1,0 +1,11 @@
+<uwsgi>
+    <socket>:8066</socket>
+    <master>true</master>
+    <chdir>/home/ubuntu/project/hongmafund</chdir>
+    <module>hongmafund.wsgi:application</module>
+    <processes>2</processes> <!-- 进程数
+    <chmod-socket>777</chmod-socket>
+    <pythonpath>/var/www</pythonpath> --> 
+    <logdate>true</logdate>
+    <daemonize>/home/ubuntu/project/var/logs/hm_uwsgi.log</daemonize>
+</uwsgi>

@@ -285,7 +285,7 @@ a.gray_btn {
 #header {
 	height:76px;
 	padding:5px 0;
-	background:#bb1218;
+	background:#ac121a;
 	margin:0 auto;
 	position:relative;z-index:2222;
 }
@@ -322,6 +322,7 @@ a.gray_btn {
 	height:35px;
 	line-height:35px;
 	font-size:14px;
+	font-weight:bold;
 	width:120px;
 	text-align:center;
 	position:relative;

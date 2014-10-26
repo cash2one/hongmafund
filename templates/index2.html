@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:wb="http://open.weibo.com/wb">
+<head>
+<meta name="Keywords" content="期货-期货实盘账户-期货私募基金-期货投资-期货操盘-期货资金曲线-期货操盘手" />
+<meta name="Description" content="牢记网址：www.simu88.com;只做期货的代理操盘;股票代理操盘，分成条款：季度结算四六分" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>期货-期货实盘账户-期货私募基金-期货投资-期货操盘-期货资金曲线-期货操盘手</title>
+<link href="/static/css/reset.css" type="text/css" rel="stylesheet" />
+<link href="/static/css/common.css" type="text/css" rel="stylesheet" />
+<link href="/static/css/style.css" type="text/css" rel="stylesheet" />
+<link href="/static/css/index.css" type="text/css" rel="stylesheet" />
+<link href="/static/css/selectCss.css" type="text/css" rel="stylesheet" />
+<script src="/static/js/jquery-1.7.2.min.js"></script>
+<script src="/static/d3/d3.min.js" type="text/javascript"></script>
+<script src="/static/nvd3/nv.d3.min.js" type="text/javascript"></script>
+{{ chart|safe }}
+{{ chart2|safe }}
+</head>
+<body>
+<!--头部-->
+<div id="header" >
+  <div class="overall">
+      <h1 class="logo"><a href="index.html" title="私募888">私募888</a></h1>
+      <div class="header_nav">
+    <a href="">设为首页</a>
+	<a href="">加入收藏</a>
+	<a href="">联系我们</a>
+	<a href="">English Version</a>
+    </div>
+</div>
+<!--导航栏-->
+
+</div>
+<div id="nav">
+    <ul>
+      <li class="selected"><a href="/" title="首页">首页</a></li>
+      <li><a href="/spzh.html" title="">实盘账户展示 </a></li>
+      <li><a href="/dyzh.html" title="">单一账户理财</a></li>
+      <li><a href="/smjj.html" title="">私募基金产品</a></li>
+      <li><a href="/zzvip.html" title="">至尊vip客户</a></li>
+      <li><a href="/about.html" title="">红马简介</a></li>
+	  <li><a href="/company.html" title="">操盘团队</a></li>
+      <li><a href="/services.html" title="">服务内容</a></li>
+    </ul>
+</div>
+<div id="index_banner">
+<div class="banner" id="banner">
+    <div class="pic rel">
+        <ul class="abs">
+        <li style="background:url(/static/images/1.png) no-repeat center 0;">
+        </li>
+         <li style="background:url(/static/images/2.jpg) no-repeat center 0;">
+        </li>
+         <li style="background:url(/static/images/3.jpg) no-repeat center 0;">
+        </li>
+        <li style="background:url(/static/images/4.jpg) no-repeat center 0;">
+        </li>
+        
+        </ul>
+    </div>
+<ul class="switch_btn">
+<li class="selected">1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+</ul>
+</div>
+
+
+
+</div>
+<div class="overall login">
+
+        
+    </div>
+    <div id="main">
+    	<div class="overall">
+
+<div id="index_adv">
+<div class="home_login">
+	        <dl class="before">		
+            <form id="frmLogin" action="." method="post">{% csrf_token %}
+                    <dt class="home_login_tit rel">
+                        <span>会员登录</span>
+                        <i class="home_prompt abs"></i>
+                    </dt>
+                    <dd>
+                        <input type="text" name="username" value="用户名" class="home_login_name" id="id_username">
+                        <p id="name_null_prompt" style="font-size:12px; color:#f00;"></p>
+                    </dd>
+                    <dd>
+                        <input type="password" name="password" class="home_login_pwd" value="密码" id="id_password">
+                        <p id="pwd_null_prompt" style="font-size:12px; color:#f00;"></p>
+                    </dd>
+                    <dd>
+                        <div class="area">
+                            <select style="" id="area" name="area"><option value="MEMBER">普通会员</option><option value="HIGHMEMBER">高级会员</option><option value="PAYMEMBER" selected="">付费会员</option><option value="SPECIALTY">尊享VIP会员</option></select>
+                        </div>
+                        <p id="pwd_null_prompt" style="font-size:12px; color:#f00;"></p>
+                    </dd>
+                    <dd class="home_login_btn">
+                        <a class="login_btn" href="" title="Login">登录</a>
+                        <a class="reg_btn" href="{% url 'register' %}">注册</a>
+                    </dd>
+                </form>
+        </dl>
+		</div>
+	<!--<div class="overall">
+		<div class="img_box" id="lineChart"><a href="/chart/stock.html"><svg style="width:238px;height:210px;"></svg></a></div>
+		<div class="img_box" id="lineChart2"><a href="/chart/fund.html"><svg style="width:238px;height:210px;"></svg></a></div>
+		<div class="img_box"><img src="{{ad1.ad_thumbnail.url}}" width="" height=""/></div>
+		<div class="img_box mr0"><img src="{{ad2.ad_thumbnail.url}}" width="" height="" class=""/></div>
+    <div class="clear"></div>-->
+	<img src=" " width="" height=""/>
+	<img src=" " width="" height=""/>
+	<img src="{{ad1.ad_thumbnail.url}}" width="" height=""/>
+	<img src="{{ad2.ad_thumbnail.url}}" width="" height="" class="mr0"/>
+</div>
+<div id="index_article">
+      <h2>实盘账户展示</h2>
+      <div class="index_article_list" >
+       <div  class="switchBox" >
+                <h3><a href="#" class="more"></a>大陆a股</h3>        
+                <ul class="tabs_con">
+                {% load pagination_tags %}
+                {% load pagination_tags %}
+				{% autopaginate article_dlsp 5 %}
+				{% for a in article_dlsp %}
+				<li><a href="/spzh/simu{{ a.id }}88.html" target="_blank">{{ a.title }}</a></li>
+				{% endfor %}
+				</ul>
+                
+        </div>
+       <div  class="switchBox mr0" >
+                <h3><a href="#" class="more"></a>大陆期货</h3>        
+                <ul class="tabs_con">
+                {% autopaginate article_dlqh 5 %}
+					{% for a in article_dlqh %}
+					<li><a href="/spzh/simu{{ a.id }}88.html" target="_blank">{{ a.title }}</a></li>
+					{% endfor %}
+                </ul>
+                
+        </div>
+       <div  class="switchBox" >
+                <h3><a href="#" class="more"></a>全球股票</h3>        
+                <ul class="tabs_con">
+                {% autopaginate article_qqgp 5 %}
+					{% for a in article_qqgp %}
+					<li><a href="/spzh/simu{{ a.id }}88.html" target="_blank">{{ a.title }}</a></li>
+					{% endfor %}
+                </ul>
+                
+        </div>
+       <div  class="switchBox mr0" >
+                <h3><a href="#" class="more"></a>全球期货</h3>        
+                <ul class="tabs_con">
+                {% autopaginate article_qqqh 5 %}
+					{% for a in article_qqqh %}
+					<li><a href="/spzh/simu{{ a.id }}88.html" target="_blank">{{ a.title }}</a></li>
+					{% endfor %}
+                </ul>
+                
+        </div>
+      </div>
+      <div class="clear"></div>
+<div class="adv_img">
+  <img src="/static/images/adv1.jpg" width="735" height="100" /></div>     
+   <h2>单一账户理财</h2>
+      <div class="index_article_list" >
+       <div  class="switchBox" >
+                <h3><a href='/dyzh/yyys.html' target="_blank">1亿人民币以上</a></h3>        
+                <ul class="tabs_con">
+                {% autopaginate article_yyys 5 %}
+					{% for a in article_yyys %}
+					<li><a href="/dyzh/simu{{ a.id }}88.html" target="_blank">{{ a.title }}</a></li>
+					{% endfor %}
+                </ul>
+                
+        </div>
+       <div  class="switchBox mr0" >
+                <h3><a href='/dyzh/yyyx.html' target="_blank">1亿人民币以下</a></h3>        
+                <ul class="tabs_con">
+                {% autopaginate article_yyyx 5 %}
+					{% for a in article_yyyx %}
+					<li><a href="/dyzh/simu{{ a.id }}88.html" target="_blank">{{ a.title }}</a></li>
+					{% endfor %}
+                </ul>
+                
+        </div>
+      
+<div class="adv_img">
+  <img src="/static/images/adv1.jpg" width="735" height="100" /></div>     
+   <h2>全球私募基金</h2>
+      <div class="index_article_list" >
+       <div  class="switchBox" >
+                <h3><a href='/smjj/dlsmjj.html' target="_blank">中国大陆地区私募基金</a></h3>        
+                <ul class="tabs_con">
+                {% autopaginate article_dlsmjj 5 %}
+					{% for a in article_dlsmjj %}
+					<li><a href="/smjj/simu{{ a.id }}88.html" target="_blank">{{ a.title }}</a></li>
+					{% endfor %}
+                </ul>
+                
+        </div>
+       <div  class="switchBox mr0" >
+                <h3><a href='/dyzh/yyyx.html' target="_blank">全球私募基金</a></h3>        
+                <ul class="tabs_con">
+                {% autopaginate article_qqsmjj 5 %}
+					{% for a in article_qqsmjj %}
+					<li><a href="/smjj/simu{{ a.id }}88.html" target="_blank">{{ a.title }}</a></li>
+					{% endfor %}
+                </ul>
+                
+        </div>
+      </div>
+      <div class="clear"></div>     
+</div>
+<div class="adv_img">
+ <div class="clear"></div>
+  <img src="/static/images/adv1.jpg" width="735" height="100" /></div>     
+   <h2>私人操盘手服务</h2>
+      <div class="index_article_list" >
+       <div  class="switchBox" >
+                <h3><a href='/zzvip/srcp.html' target="_blank">雇佣私人操盘手</a></h3>        
+                <ul class="tabs_con">
+                {% autopaginate article_srcp 5 %}
+					{% for a in article_srcp %}
+					<li><a href="/zzvip/simu{{ a.id }}88.html" target="_blank">{{ a.title }}</a></li>
+					{% endfor %}
+                </ul>
+                
+        </div>
+       <div  class="switchBox mr0" >
+                <h3><a href='/zzvip/zzvip.html' target="_blank">雇佣至尊VIP操盘团队</a></h3>        
+                <ul class="tabs_con">
+                {% autopaginate article_zzvip 5 %}
+					{% for a in article_zzvip %}
+					<li><a href="/zzvip/simu{{ a.id }}88.html" target="_blank">{{ a.title }}</a></li>
+					{% endfor %}
+                </ul>
+                
+        </div>
+         <div class="clear"></div>
+        </div>
+</div>
+  
+</div>
+    <div class="clear"></div>
+{% include 'foot.html'%}
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F5a88a04e2cfc1e01f030c3980be4fa23' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+<script src="/static/js/jquery.js" type="text/javascript"></script>
+<script src="/static/js/common.js" type="text/javascript"></script>
+<script src="/static/js/idTabs.js" type="text/javascript"></script>
+<script src="/static/js/selectCss.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function(){
+	//select美化
+//需要在没个select外套一个层，并赋值上position:relative
+$("select").selectCss();
+		$("#switchBox").switchTab({defaultIndex: "1", titCell: ".tabs li", mainCell: ".tabs_con", interTime: 5000});
+		$("#switchBox2").switchTab({defaultIndex: "1", titCell: ".tabs li", mainCell: ".tabs_con", interTime: 5000});
+		$("#switchBox3").switchTab({defaultIndex: "1", titCell: ".tabs li", mainCell: ".tabs_con", interTime: 5000});
+		$("#switchBox4").switchTab({defaultIndex: "1", titCell: ".tabs li", mainCell: ".tabs_con", interTime: 5000});
+
+	})
+	
+</script>
+
+
+
+</html>

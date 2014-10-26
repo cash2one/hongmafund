@@ -1,0 +1,11 @@
+<uwsgi>
+    <socket>:8066</socket>
+    <master>true</master>
+    <chdir>/home/cbin/project/github/hongmafund</chdir>
+    <module>hongmafund.wsgi:application</module>
+    <processes>3</processes> <!-- 进程数
+    <chmod-socket>777</chmod-socket>
+    <pythonpath>/home/cbin/project/github</pythonpath> --> 
+    <logdate>true</logdate>
+    <daemonize>/home/cbin/project/var/logs/hm_uwsgi.log</daemonize>
+</uwsgi>
